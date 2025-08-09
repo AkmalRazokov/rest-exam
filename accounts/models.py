@@ -6,7 +6,7 @@ import uuid
 
 
 class CustomUser(AbstractUser):
-    username = None
+    username = None 
     email = models.EmailField(unique=True)
     is_confirmed_email = models.BooleanField(default=False)
 

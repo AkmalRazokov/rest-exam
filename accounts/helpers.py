@@ -7,7 +7,7 @@ def send_confirmation_token(email, token):
     message = f" click here {path} to confirm your email"
     from_email = settings.EMAIL_HOST_USER
     try:
-        send_mail(subject="Welcome to kino!",
+        send_mail(subject="Welcome to project!",
                   message=message,
                   from_email=from_email,
                   recipient_list = [email])
